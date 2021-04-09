@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+} 
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+header ul {
+  display: flex;
+  list-style: none;  
+}
+
+header ul li {
+  margin-right: 1em;
+}
+
+.about-img {
+  background: #fff;
+  width: 20%;
+  height: 20%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.introduction {
+  text-align: center;
+}
+
+.gallery {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-filter {
+  padding: 0 15px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  
+}
+.galleryContainer {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  justify-content: center;
+  padding-right: 2em;
+  padding-left: 2em;
+
+}
+
+.galleryContainer img {
+  width:  100%;
+	height: 300px;
+	object-fit: cover;
+
+
+}
+
+@media (max-width: 900px) {
+  .galleryContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.filterDiv {
+  display: none;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;  
+  padding: 12px 16px;
+}
+
+.btn:hover {
+  color:burlywood;
+}
+
+.btn.active {
+  color:indianred;
+  font-style: italic;
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <title>Gabriella likes film photography</title>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <h1>Hello!</h1>
+      <nav>
+        <ul>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div class="introduction">
+      <img class="about-img" src="./photos/self.jpg" alt="picture of gabriella">
+      <h2>I'm Gabriella Tavares!</h2>
+      <h3>Aspiring Full Stack Developer - Amateur Film Photographer</h3>
+      <p>
+        I enjoy taking pictures with my analog camera. But that doesn't mean that I'm good at it. 
+        I'm still learning about film photography and this little project was made to show my pictures - while I practice what I've learned about web development as well.
+      </p>
+      <p>
+        Film photography is alive and well. Though digital photography is by far the dominant medium, film is still around, and has been growing in popularity over the last decade as photographers discover (or re-discover) the joys of chemical, analog photography. There's also a healthy supply of good used film cameras and many of varieties of film still on the market.
+      </p>
+    </div>
+  </section>
+
+  <section id="gallery">
+   <div>
+    <h2>Rollei XF 35</h2>
+    <p>
+     This camera was released in 1974 by Rollei-Werke Franke & Heidecke as the latest addition to the Rollei 35 series which, at the time, were the world’s smallest full-frame 35mm cameras.
+     I bought it on eBay and it's my favorite! I'm planning to get some other cameras, but I highly recommend this one.
+    </p>
+
+     <div class="row">
+       <div class="gallery-filter" id="myBtnContainer">
+         <span class="btn active" onclick="filterSelection('all')">All Films</span>
+         <span class="btn" onclick="filterSelection('pan400')">Kentmere Pan 400</span>
+         <span class="btn" onclick="filterSelection('colorplus')">Kodak Colorplus 200</span>
+         <span class="btn" onclick="filterSelection('fujicolor')">Fujicolor C200</span>
+       </div>
+     </div> 
+     <div class="galleryContainer">
+      <div class="filterDiv pan400">
+        <img src="./photos/pan400-1.jpeg" alt="">
+      </div>
+      <div class="filterDiv pan400">
+        <img src="./photos/pan400-2.jpeg" alt="">
+      </div>
+      <div class="filterDiv pan400">
+        <img src="./photos/pan400-3.jpeg" alt="">
+      </div>
+      <div class="filterDiv pan400">
+        <img src="./photos/pan400-4.jpeg" alt="">
+      </div>
+      <div class="filterDiv colorplus">
+        <img src="./photos/colorplus200-1.jpeg" alt="">
+      </div>
+      <div class="filterDiv colorplus">
+        <img src="./photos/colorplus200-2.jpeg" alt="">
+      </div>
+      <div class="filterDiv colorplus">
+        <img src="./photos/colorplus200-3.jpeg" alt="">
+      </div>
+      <div class="filterDiv colorplus">
+        <img src="./photos/colorplus200-4.jpeg" alt="">
+      </div>
+      <div class="filterDiv colorplus">
+        <img src="./photos/colorplus200-5.jpeg" alt="">
+      </div>
+      <div class="filterDiv fujicolor">
+        <img src="./photos/fujicolorC200-1.jpeg" alt="">
+      </div>
+      <div class="filterDiv fujicolor">
+        <img src="./photos/fujicolorC200-2.jpeg" alt="">
+      </div>
+      <div class="filterDiv fujicolor">
+        <img src="./photos/fujicolorC200-3.jpeg" alt="">
+      </div>
+      <div class="filterDiv fujicolor">
+        <img src="./photos/fujicolorC200-4.jpeg" alt="">
+      </div>
+      <div class="filterDiv fujicolor">
+        <img src="./photos/fujicolorC200-5.jpeg" alt="">
+      </div>
+      <div class="filterDiv fujicolor">
+        <img src="./photos/fujicolorC200-6.jpeg" alt="">
+      </div>
+      <div class="filterDiv fujicolor">
+        <img src="./photos/fujicolorC200-7.jpeg" alt="">
+      </div>
+      <div class="filterDiv fujicolor">
+        <img src="./photos/fujicolorC200-8.jpeg" alt="">
+      </div>
+     </div>
+   </div>
+   <div>
+     <h2>Simple Use Reusable Film Camera Color Negative 400</h2>
+     <p>
+      The Lomography Simple Use Film Camera was the first contact that I had with film in a long time — and it’s preloaded with funky film and comes with Color Gel flash filters so that you can dive right into the world of creative analogue photography. Compact and equipped with a flash, you can capture the good times everywhere you go. It’s perfect for parties, road trips, weddings and more!
+     </p>
+     <div class="galleryContainer">
+       <div><img src="./photos/simpleusefilmcamera-1.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-2.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-3.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-4.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-13.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-6.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-7.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-8.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-9.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-11.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-10.jpeg" alt=""></div>
+       <div><img src="./photos/simpleusefilmcamera-12.jpeg" alt=""></div>
+
+
+
+
+
+
+     </div>
+   </div>
+  </section>
+  <footer id="contact">
+    <a href="mailto:gabriellatatavares@gmail.com" class="footer__link">gabriellatatavares@gmail.com</a>
+    <ul class="social-list">
+      <li><a href="https://www.linkedin.com/in/gabriella-tavares/"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/gabriellatavares"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://gitlab.com/gabriellatavares"><i class="fab fa-gitlab"></i></a></li>
+
+    </ul>
+  </footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
