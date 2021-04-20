@@ -1,0 +1,19 @@
+
+
+@media (max-width: 900px) {
+  .galleryContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .full-img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    li {
+      display: none;
+    }
+  }
+}
+
