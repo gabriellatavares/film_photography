@@ -5,7 +5,9 @@ html {
   --link-hovered: #3964ff;
   --link-clicked: #dce1f6;
   --footer-backgroud: #202020;
-  --footer-text: #FFDF6C; 
+  --footer-text: #FFDF6C;
+  --dash: lightgray;
+  scroll-behavior: smooth; 
 }
 
 html[data-theme='dark'] {
@@ -16,6 +18,15 @@ html[data-theme='dark'] {
   --link-hovered: #ffce20;
   --footer-backgroud: #f8f8f8;
   --footer-text: #6c8cff; 
+  --dash: rgb(74, 74, 74);
+  scroll-behavior: smooth;
+  h3 {
+    color: var(--link-hovered);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, var(--bg) 65%);
+  }
+  mark {
+    color: var(--bg);
+  }
 
 }
 
@@ -37,9 +48,9 @@ body {
     color: var(--color-headings);
     text-decoration: none;
     font-family: 'Archivo Black', sans-serif;
-    &:hover {
+      &:hover {
       color: var(--link-hovered);
-    }
+      }
   }
 }
 
@@ -47,6 +58,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px inset var(--dash);
+
   h1 {
     padding-top: 10px;
     padding-left: 28px;
@@ -63,15 +78,5 @@ header {
     li {
       margin-right: 1em;
     } 
-  }
-}
-
-.introduction {
-  text-align: center;
-  img {
-    width: 20%;
-    height: 20%;
-    margin: 0 auto;
-    border-radius: 50%;
   }
 }
